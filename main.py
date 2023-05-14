@@ -7,7 +7,7 @@ st.set_page_config(layout='wide')
 data_frame = openpyxl.load_workbook('data.xlsx')
 sheet_names = data_frame.sheetnames
 print(sheet_names)
-st.sidebar.header("Al-naghi company projects")
+st.sidebar.header("Al-Sheikh company projects")
 project = st.sidebar.selectbox("Select the project", options=sheet_names)
 
 if project in sheet_names:
